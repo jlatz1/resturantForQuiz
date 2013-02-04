@@ -12,7 +12,7 @@
         <title>Menu</title>
         <script type="text/javascript">
             
-            function addItem(mnuFoods, slctFoods){
+            function addItem(mnuFoods, selFoods){
                 if(menuFoods.selectedIndex == -1){
                     alert("no item added; close, but no cigar!!!");
                     
@@ -20,16 +20,16 @@
                     if(selectFoods.length == 0){
                         selectFoods.options[0] = new Option(mnuFoods.options[mnuFoods.selectedIndex].text);
                     }else{
-                         selectFoods.add(new Option(mnuFoods.options[mnuFoods.selectedIndex].text), slctFoods.options[slctFoods.length]);
+                         selectFoods.add(new Option(mnuFoods.options[mnuFoods.selectedIndex].text), selFoods.options[selFoods.length]);
                     }
                 }
             }
             
-            function removeFoodItem(slctFoods){
+            function removeFoodItem(selFoods){
                  if(selectFoods.selectedIndex == -1) {
                     alert("You must select an item to remove!!");
                 } else {
-                    selectFoods.remove(slctFoods.selectedIndex);
+                    selectFoods.remove(selFoods.selectedIndex);
                 }
             }
             function checkSelectedFoods(foods){
