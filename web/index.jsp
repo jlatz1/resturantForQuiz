@@ -75,14 +75,14 @@
                             <option>Apple pie</option>
                         </select>
                     </td>
-                    <td width="20%" bgcolor="orange" align="center">
+                    <td width="20%" bgcolor="red" align="center">
                         <input type="button" onClick="addFoodItem(menuFoods, selectedFoods)" value="Add ->" />
                         <br />
                         <input type="button" onClick="removeFoodItem(selectedFoods)" value="<- Remove" />
                         <br />
                         <input type="submit" value="Submit" />
                     </td>
-                    <td width="35%" bgcolor="orange" align="center">
+                    <td width="35%" bgcolor="red" align="center">
                         <select id="selectedFoods" name="selectedFoods" size="5" multiple="true" style="width: 25ex;">
 
                         </select>
