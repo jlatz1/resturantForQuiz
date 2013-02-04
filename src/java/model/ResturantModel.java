@@ -19,7 +19,7 @@ public class ResturantModel {
 }
        public ArrayList<Resturant> processOrders() {
         for(int x = 0; x < foods.length; x++) { 
-            Resturant r = new Resturant();
+            Resturant r = new Resturant(foods[x]);
             orders.add(r);
         }
         return orders;
