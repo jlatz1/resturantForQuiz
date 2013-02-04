@@ -5,13 +5,29 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@page import="resturant.Resturant;"%>
+<%@page import= "java.util.ArrayList;"%>
+
 <!DOCTYPE html>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>Menu results!</title>
     </head>
     <body>
-        <h1>Hello World!</h1>
+        <h1 align="center">Menu results!</h1>
+        
+        <p>Thank you for your input. Here are your results!!</p>
+        
+        <ul>
+            <% 
+            ArrayList<Resturant>orders = (ArrayList)request.getAttribute("orders");
+            for(int x = 0; x < orders.size(); x++){
+                out.println("<li>" + orders.get(x).getName() + "</li>");
+            }
+            out.println("</ul>");
+            
+            %>
+        </ul>
     </body>
 </html>
