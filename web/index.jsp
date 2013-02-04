@@ -51,7 +51,10 @@
             </script>
     </head>
     
-            <h1 align="center">Menu</h1>
+         
+            
+    <body>
+         <h1 align="center">Menu</h1>
             <form id="menu" name="menu" action="Order?action=order" method="POST" onSubmit="return checkSelectedFoods(selectedFoods)">
                      <table width="45%" align="center" border="0">
                 <tr>
@@ -94,8 +97,5 @@
             
         </form>
             </form>
-            
-    <body>
-     
     </body>
 </html>
