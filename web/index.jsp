@@ -13,23 +13,23 @@
         <script type="text/javascript">
             
             function addItem(mnuFoods, selFoods){
-                if(menuFoods.selectedIndex == -1){
+                if(mnuFoods.selectedIndex == -1){
                     alert("no item added; close, but no cigar!!!");
                     
                 }else{
-                    if(selectFoods.length == 0){
-                        selectFoods.options[0] = new Option(mnuFoods.options[mnuFoods.selectedIndex].text);
+                    if(selFoods.length == 0){
+                        selFoods.options[0] = new Option(mnuFoods.options[mnuFoods.selectedIndex].text);
                     }else{
-                         selectFoods.add(new Option(mnuFoods.options[mnuFoods.selectedIndex].text), selFoods.options[selFoods.length]);
+                         selFoods.add(new Option(mnuFoods.options[mnuFoods.selectedIndex].text), selFoods.options[selFoods.length]);
                     }
                 }
             }
             
             function removeFoodItem(selFoods){
-                 if(selectFoods.selectedIndex == -1) {
+                 if(selFoods.selectedIndex == -1) {
                     alert("You must select an item to remove!!");
                 } else {
-                    selectFoods.remove(selFoods.selectedIndex);
+                    selFoods.remove(selFoods.selectedIndex);
                 }
             }
             function checkSelectedFoods(foods){
