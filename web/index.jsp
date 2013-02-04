@@ -12,24 +12,24 @@
         <title>Menu</title>
         <script type="text/javascript">
             
-            function addItem(menuFoods, selectFoods){
+            function addItem(mnuFoods, slctFoods){
                 if(menuFoods.selectedIndex == -1){
                     alert("no item added; close, but no cigar!!!");
                     
                 }else{
                     if(selectFoods.length == 0){
-                        selectFoods.options[0] = new Option(menuFoods.options[menuFoods.selectedIndex].text);
+                        selectFoods.options[0] = new Option(mnuFoods.options[mnuFoods.selectedIndex].text);
                     }else{
-                         selectFoods.add(new Option(menuFoods.options[menuFoods.selectedIndex].text), selectFoods.options[selectFoods.length]);
+                         selectFoods.add(new Option(mnuFoods.options[mnuFoods.selectedIndex].text), slctFoods.options[slctFoods.length]);
                     }
                 }
             }
             
-            function removeFoodItem(selectFoods){
+            function removeFoodItem(slctFoods){
                  if(selectFoods.selectedIndex == -1) {
                     alert("You must select an item to remove!!");
                 } else {
-                    selectFoods.remove(selectFoods.selectedIndex);
+                    selectFoods.remove(slctFoods.selectedIndex);
                 }
             }
             function checkSelectedFoods(foods){
