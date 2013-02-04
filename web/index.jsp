@@ -55,18 +55,18 @@
             <form id="menu" name="menu" action="Order?action=order" method="POST" onSubmit="return checkSelectedFoods(selectedFoods)">
                      <table width="45%" align="center" border="0">
                 <tr>
-                    <td width="35%" bgcolor="orange" align="center">
+                    <td width="35%" bgcolor="red" align="center">
                         <strong>Food Menu</strong>
                     </td>
-                    <td width="20%" bgcolor="orange" align="center">
+                    <td width="20%" bgcolor="red" align="center">
                         <strong>Actions</strong>
                     </td>
-                    <td width="35%" bgcolor="orange" align="center">
+                    <td width="35%" bgcolor="red" align="center">
                         <strong>Selected Food Items</strong>
                     </td>
                 </tr>
                 <tr>
-                    <td width="40%" bgcolor="orange" align="center">
+                    <td width="40%" bgcolor="red" align="center">
                         <select id="menuFoods" name="menuFoods" size="5" style="width: 25ex;">
                             <option value="1">Cheeseburger</option>
                             <option>Pork Sandwich</option>
