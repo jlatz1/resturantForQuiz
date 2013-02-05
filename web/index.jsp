@@ -55,7 +55,7 @@
             
     <body>
          <h1 align="center">Menu</h1>
-            <form id="menu" name="menu" action="Order?action=order" method="POST" onSubmit="return checkSelectedFoods(selectedFoods)">
+            <form id="menu" name="menu" action="Resturant?action=order" method="POST" onSubmit="return checkSelectedFoods(selectedFoods)">
                      <table width="45%" align="center" border="0">
                 <tr>
                     <td width="35%" bgcolor="red" align="center">
