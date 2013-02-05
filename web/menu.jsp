@@ -23,10 +23,11 @@
             <% 
            
             try{
-                String[] orders = (String[])request.getAttribute("selectedFoods");
-            for(int x = 0; x < orders.length; x++){
-                out.println("<li>" + orders.length + "</li>");
-            } 
+           ArrayList<Resturant> orders = (ArrayList)request.getAttribute("orders");
+            for(int x = 0; x < orders.size(); x++) {
+            out.println("<li>" + orders.get(x).getName() + "</li>");
+    }   
+            
                   out.println("</ul>");
            }catch(NullPointerException ne){
                  out.println("Cannot be null! Close, but no cigar!!");            
