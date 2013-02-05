@@ -32,9 +32,9 @@ public class ResturantControllers extends HttpServlet {
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
-        String control = request.getParameter("control");
+        String action = request.getParameter("action");
         
-        if(control.equals("order")){
+        if(action.equals("order")){
             RequestDispatcher r = request.getRequestDispatcher("/OrderController");
             r.forward(request, response);
             
