@@ -21,7 +21,7 @@
         
         <ul>
             <% 
-               String orders[] = request.getAttribute("selectedFoods");
+            String[] orders = (String[])request.getAttribute("selectedFoods");
             for(int x = 0; x < orders.length; x++){
                 out.println("<li>" + orders.length + "</li>");
             }
