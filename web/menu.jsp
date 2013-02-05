@@ -21,9 +21,9 @@
         
         <ul>
             <% 
-                ArrayList<Resturant>orders = (ArrayList)request.getAttribute("selectedFoods");
-            for(int x = 0; x < orders.size(); x++){
-                out.println("<li>" + orders.get(x).getName() + "</li>");
+               String orders[] = request.getAttribute("selectedFoods");
+            for(int x = 0; x < orders.length; x++){
+                out.println("<li>" + orders.length + "</li>");
             }
             out.println("</ul>");
             
