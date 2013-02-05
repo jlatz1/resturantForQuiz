@@ -87,7 +87,8 @@
                     </td>
                     <td width="35%" bgcolor="red" align="center">
                         <select id="selectedFoods" name="selectedFoods" size="5" multiple="true" style="width: 25ex;">
-
+                            <a href="menu.jsp">
+                            </a>
                         </select>
                     </td>
                 </tr>
