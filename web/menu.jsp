@@ -23,7 +23,7 @@
             <% 
             String[] orders = (String[])request.getAttribute("selectedFoods");
             for(int x = 0; x < orders.length; x++){
-                out.println("<li>" + orders.toString() + "</li>");
+                out.println("<li>" + orders.length + "</li>");
             }
             out.println("</ul>");
             
