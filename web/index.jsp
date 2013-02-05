@@ -12,7 +12,7 @@
         <title>Menu</title>
         <script type="text/javascript">
             
-            function addItem(mnuFoods, selFoods){
+            function addFoodItem(mnuFoods, selFoods){
                 if(mnuFoods.selectedIndex == -1){
                     alert("no item added; close, but no cigar!!!");
                     
@@ -55,7 +55,7 @@
             
     <body>
          <h1 align="center">Menu</h1>
-            <form id="menu" name="menu" action="Resturant?action=order" method="POST" onSubmit="return checkSelectedFoods(selectedFoods)">
+            <form id="menu" name="menu" action="ResturantControllers?action=order" method="POST" onSubmit="return checkSelectedFoods(selectedFoods)">
                      <table width="45%" align="center" border="0">
                 <tr>
                     <td width="35%" bgcolor="red" align="center">
@@ -96,6 +96,6 @@
             </table>
             
         </form>
-            </form>
+            
     </body>
 </html>
