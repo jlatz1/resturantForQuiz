@@ -21,12 +21,20 @@
         
         <ul>
             <% 
-            String[] orders = (String[])request.getAttribute("selectedFoods");
+           
+            try{
+                String[] orders = (String[])request.getAttribute("selectedFoods");
             for(int x = 0; x < orders.length; x++){
                 out.println("<li>" + orders.length + "</li>");
-            }
-            out.println("</ul>");
-            
+            } 
+                  out.println("</ul>");
+           }catch(NullPointerException ne){
+                 out.println("Cannot be null! Close, but no cigar!!");            
+                             
+        }
+        
+          
+                    
             %>
         </ul>
     </body>
