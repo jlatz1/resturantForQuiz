@@ -74,7 +74,7 @@ public class OrderController extends HttpServlet {
         ResturantModel rm = new ResturantModel(selectedFoods);
         
         ArrayList<Resturant>newOrder = rm.processOrders();
-        request.setAttribute("newOrder", newOrder);
+        request.setAttribute("orders", newOrder);
         RequestDispatcher r = request.getRequestDispatcher("menu.jsp");
         r.forward(request, response);
         
