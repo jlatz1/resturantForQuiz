@@ -33,8 +33,8 @@ public class ResturantControllers extends HttpServlet {
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
         String action = request.getParameter("action");
-       // String[] selectedFoods = request.getParameterValues("selectedFoods");
-        //request.setAttribute("selectedFoods", selectedFoods);
+        String[] selectedFoods = request.getParameterValues("selectedFoods");
+        request.setAttribute("selectedFoods", selectedFoods);
         
         if(action.equals("order")){
             RequestDispatcher r = request.getRequestDispatcher("/OrderController");
