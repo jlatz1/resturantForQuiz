@@ -41,7 +41,7 @@ public class ResturantControllers extends HttpServlet {
             r.forward(request, response);
            
         }else{
-            response.sendRedirect("index.jsp");
+            response.sendRedirect("/index.jsp");
             }
       
     }
