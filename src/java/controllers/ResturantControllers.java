@@ -37,7 +37,7 @@ public class ResturantControllers extends HttpServlet {
         request.setAttribute("selectedFoods", selectedFoods);
         
         if(action.equals("order")){
-            RequestDispatcher r = request.getRequestDispatcher("/OrderController");
+            RequestDispatcher r = request.getRequestDispatcher("/menu.jsp");
             r.forward(request, response);
            
         }else{
