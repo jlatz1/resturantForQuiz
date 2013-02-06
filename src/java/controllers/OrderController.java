@@ -70,8 +70,8 @@ public class OrderController extends HttpServlet {
         Map<String, String[]>selectedG = request.getParameterMap();
         System.out.println("");
         
-        String newFoods [] = request.getParameterValues("newFoods");
-        ResturantModel rm = new ResturantModel(newFoods);
+        String selectedFoods [] = request.getParameterValues("selectedFoods");
+        ResturantModel rm = new ResturantModel(selectedFoods);
         
         ArrayList<Resturant>newOrder = rm.processOrders();
         request.setAttribute("newOrder", newOrder);
