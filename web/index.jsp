@@ -38,7 +38,7 @@
                     return false;
                 }
                 for(x = 0; x < foods.length; x++){
-                    food.options[x].selected = true;
+                    foods.options[x].selected = true;
                 
                 }
                     return true;
