@@ -22,7 +22,7 @@ import resturant.Resturant;
  */
 @WebServlet(name = "OrderController", urlPatterns = {"/OrderController"})
 public class OrderController extends HttpServlet {
-
+    private static final String DESTINATION = "/menu.jsp";
     /**
      * Processes requests for both HTTP
      * <code>GET</code> and
@@ -75,7 +75,7 @@ public class OrderController extends HttpServlet {
         
         ArrayList<Resturant>newOrder = rm.processOrders();
         request.setAttribute("orders", newOrder);
-        RequestDispatcher r = request.getRequestDispatcher("menu.jsp");
+        RequestDispatcher r = request.getRequestDispatcher(DESTINATION);
         r.forward(request, response);
         
 
