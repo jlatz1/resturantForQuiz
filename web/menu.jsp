@@ -38,5 +38,6 @@
                     
             %>
         </ul>
+        <p><a href="index.jsp">Back to Menu Home</a></p>
     </body>
 </html>
