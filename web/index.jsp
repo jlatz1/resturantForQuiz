@@ -71,11 +71,19 @@
                 <tr>
                     <td width="40%" bgcolor="red" align="center">
                         <select id="menuFoods" name="menuFoods" size="5" style="width: 25ex;">
-                            <option value="1">Cheeseburger</option>
-                            <option>Pork Sandwich</option>
-                            <option>Ham Salad</option> 
-                            <option>Chicken Wings</option>
-                            <option>Apple pie</option>
+                            <option value="1">Cheeseburger- $3.75</option>
+                            <option>Pork Sandwich- $5.25</option>
+                            <option>Ham Salad Sandwich- $4.50</option> 
+                            <option>Chicken Wings- $3.25 for 6</option>
+                            <option>Fries- $2.50</option>
+                            <option>Chips- $1.75</option>
+                            <option>Apple pie- $2.75/slice</option>
+                            <option>Miller Lite Beer- $4.25</option>
+                            <option>Apple Martini- $7.50</option>
+                            <option>Coke 16oz- $1.50</option>
+                            <option>Mellow Yellow 16oz- $1.50</option>
+                            <option>Sprite 16oz- $1.50</option>
+                            <option>Diet Coke 16oz- $1.50</option>
                         </select>
                     </td>
                     <td width="20%" bgcolor="red" align="center">
